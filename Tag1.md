@@ -136,7 +136,7 @@ Aufgaben:
 
 
 ## Teil 3: Grundlegende Git-Befehle
-Video [Git for Humans](https://www.youtube.com/watch?v=eWxxfttcMts) (20 Minuten) 
+:arrow_forward: Video [Git for Humans](https://www.youtube.com/watch?v=eWxxfttcMts) (20 Minuten) 
 
 
 ### 3.1 Lokale Änderungen
