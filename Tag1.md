@@ -88,32 +88,22 @@ Konfigurieren von Standardeditoren und anderen Optionen:
 
 
 
-Aufgabe:
-  1. Konfiguriere Dein git.
+Aufgaben:
+  1. Installiere und konfiguriere git auf Deinem Rechner.
   2. Wo liegt die Konfigurationsdatei, wie sieht die aus? 
-  3. Was kann man dort noch konfigurieren? https://git-scm.com/book/de/v2/Erste-Schritte-Git-Basis-Konfiguration
+  3. Was kann man dort noch konfigurieren? → [Cheat Sheet Git-Config](https://git-scm.com/book/de/v2/Erste-Schritte-Git-Basis-Konfiguration)
 
-
-
-````
-[user]
-	name = Sandra Wiegard
-	email = s.wiegard@ndr.de
-[core]
-	autocrlf = input
-	editor = code --wait
-````
 
 ### 2.3 Erste Schritte mit Git
 In Git arbeiten wir mit Repositories. Ein Git-Repository ist nichts anderes als ein Ordner, den Du mit Git verwaltest. Darin können alle Arten von Dateien sein, Bilder und ihre Versionen, Deine Abschlussarbeit oder ein Softwareprojekt. 
 
-Initialisierung eines Git-Repositories:
+Initialisierung eines Ordners als Git-Repository:
 -   `git init`: Macht ein Git-Repository aus dem aktuellen Verzeichnis.
   
 Clonen eines vorhandenen Repositories von einem anderen Computer/Speicher:
 -   `git clone <repository-url>`: Lädt ein Remote-Repository herunter und erstellt eine lokale Kopie.
 
-Aufgabe: 
+Aufgaben: 
 1. Lege Dir als erstes ein Verzeichnis `workshop` für den Workshop an, in dem Du alles speicherst, was wir hier machen werden.
 2. Erstelle darin einen Ordner mit dem Namen *git-workshop-doku* und mache daraus ein Git-Repo. 
 3. Woran kannst Du jetzt erkennen, dass es ein Git-Repo ist?
@@ -121,7 +111,7 @@ Aufgabe:
 ### 2.4 GitHub
 GitHub ist eine Webplattform, auf der du Git-Repositories hosten kannst, und die Funktionen für Zusammenarbeit, Code-Überprüfung, Automatisierung und Projektmanagement bietet. Github ist nur ein Anbieter [unter vielen](https://www.heise.de/tipps-tricks/GitHub-Alternativen-Die-5-besten-Seiten-4349610.html).
 
-Aufgaben: 
+:pencil2: **Aufgaben:**
 1. Gehe zu [GitHub Sign Up](https://github.com/signup) und folge den Anweisungen, um einen neuen Account zu erstellen.
 2. Mache Dich mit der Oberfläche von Github vertraut und lege Dir dort ein neues Repo an. 
 
