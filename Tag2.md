@@ -30,11 +30,10 @@ Wenn Ihr Euch die Commit-History mit `git log`
 ### 1.3 Rebasen
 rebase vs merge
 
-
 ## Teil 2: Recap Git
 
 ### 2.1 Git Video
-Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) 
+:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) 
 
 ### 2.2 Git GUI
 Hausaufgaben vergleichen:
@@ -42,8 +41,6 @@ Welche GUI für Git gefällt Dir und warum? Zeig her.
 
 ### 2.3 Git-Quiz
 https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT
-
-
 
 
 
@@ -78,7 +75,7 @@ https://lerneprogrammieren.de/git/
 ### 4.2 Einrichtung von GitHub über SSH
 https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html
 
-Aufgaben:
+**Aufgaben:**
 1.   Hinterlege bei Github Deinen SSH-Key
 2.   Lass Dir anzeigen, welche remote origins Dein Repo hat: `git remote -v`
 3.   Ändere den remote origin auf die ssh-URL Deines Repos bei Gitub: `git remote set-url origin [ssh-URl deines Repos]`

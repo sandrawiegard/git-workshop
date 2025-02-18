@@ -36,7 +36,7 @@ CI/CD ist eine Methodik in der Softwareentwicklung, die darauf abzielt, Codeänd
 
 
 ### 1.1 Übliche Schritte in CI/CD
-Video [DevOps Guide - CI/CD ](https://www.youtube.com/watch?v=YMJ_sdeDbFE) (8 Minuten)
+:arrow_forward: Video [DevOps Guide - CI/CD ](https://www.youtube.com/watch?v=YMJ_sdeDbFE) (8 Minuten)
 
 
 1.  Code Commit:
@@ -58,11 +58,12 @@ Mit GitHub Actions kannst du deine Softwareentwicklungs-Workflows direkt im  Rep
 Github Actions werden in yaml geschrieben. YAML steht für *Yet Another Markup Language*. Es ist eine  für Menschen lesbare Auszeichnungssprache, die häufig für  Konfigurationsdateien verwendet wird, insbesondere von CI- und  [DevOps](https://de.wikipedia.org/wiki/DevOps)-fokussierten Softwaretools. YAML ist eine Erweiterung von JSON um syntaktisch  wichtige Zeilenumbrüche und Einrückungen, ähnlich wie auch in Python  geschrieben wird. ***Anders als in Python allerdings erlaubt YAML  keine Tabulator-Zeichen, das ist eine häufige Fehlerquelle!***
 
 → [Cheat Sheet YAML](https://quickref.me/yaml.html) 
-
 → [Cheat Sheet Github Actions](https://resources.github.com/actions/github-actions-cheat/)
 
 
-Denkt bei jeder Aufgabe daran, sinnvolle Commitmessages zu verwenden:
+**Aufgaben:**
+
+Denkt daran, sinnvolle Commitmessages zu verwenden:
 1. Baue diese [Automatisierung](https://dev.to/sre_panchanan/hello-world-in-github-actions-a-beginners-guide-to-your-first-workflow-1mbh) nach 
 2. Überprüfe die Fehler in den Logs und löse sie auf bis die Action grün durchläuft.
 3. dann [diese](https://graphite.dev/guides/github-actions-beginner-guide) 
@@ -81,14 +82,14 @@ Die Warnungen in den Logs sagen, dass einige der Packages, die Ihr in den Action
 -   die Codequalität zu verbessern und 
 -   die Wartung des Projekts zu  vereinfachen, indem es sicherstellt, dass Abhängigkeiten  in der *workflow.yml*-Datei immer  aktuell  sind.
 
-Aufgaben:
+**Aufgaben:**
 1. Aktiviere Dependabot Updates in Deinem Repo und lasse den Bot laufen.
 2. Löse die Pull Requests auf und bringe alles auf den neusten Stand.
-3. 
 
 
 ### 1.5 Recap
-Aufgaben:
+**Aufgaben:**
+
 Schreib mit Deinen eigenen Worten in die `recap.md`:
 1. Was ist CI/CD? Wozu braucht man das?
 2. Was sind Github-Actions?
@@ -155,7 +156,7 @@ Bei der asymmetrischen Verschlüsselung werden ein öffentlicher  Schlüssel zum
 
 ### 3.1 Was Ihr gelernt habt
 
-Git, Git-Config, Github, Repo, Remote, Cle und Fork, Commits und Commit-Messages, Markdown, Push, Merge, Pull vs. Fetch, add, status, log, gitignore, Branch, Pull Requests, Kanban-Board, Git GUI, SSH-Key, Git auf der Kommandozeile, YAML, CI/CD, Git Actions, workflows, Dependabot, symmetrische und asymmetrische Verschlüsselung. 
+Git, Git-Config, Github, Repo, Remote, Clone und Fork, Commits und Commit-Messages, Markdown, Push, Merge, Pull vs. Fetch, add, status, log, gitignore, Branch, Pull Requests, Kanban-Board, Git GUI, SSH-Key, Git auf der Kommandozeile, YAML, CI/CD, Git Actions, workflows, Dependabot, symmetrische und asymmetrische Verschlüsselung. 
 
 Ihr könnt ein Log lesen und Probleme selbständig lösen.
 
@@ -165,10 +166,10 @@ Ihr könnt zusammen arbeiten.
 
 Wenn Ihr den Git-Workshop für die Azubis im nächsten Jahr geben würdet – was würdet Ihr anders machen? Reihenfolge, Inhalte, mehr oder weniger von irgendwas?
 
-Aufgaben:
 
-- Überarbeitet in Zweierteams das Repo `git-Workshop` und nutzt für jede Änderung einzelne Commits mit aussagekräftigen Messages, etwa `remove Video`oder `add explanation` oder `change the order`.
-- Stellt diese Änderungen anhand der Commit-History vor.
+**Aufgaben:**
+1. Überarbeitet in Zweierteams das Repo `git-Workshop` und nutzt für jede Änderung einzelne Commits mit aussagekräftigen Messages, etwa `remove Video`oder `add explanation` oder `change the order`.
+2. Stellt diese Änderungen anhand der Commit-History vor.
 
 Danke :clap:
 

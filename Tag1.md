@@ -58,7 +58,7 @@ Git ist ein Versionsmanagementsystem, entwickelt von Linus Torvalds 2005 für di
 Git ist erstmal nur ein Softwarepaket. Du kannst es benutzen über:
 - die Command Line
 - die Integration in Deine IDE
-- oder eine extra GUI 
+- oder einrm_ extra GUI 
 
 ### 2.1 Installation von Git
 Lade Git von der [offiziellen Website](https://git-scm.com/) oder verwende einen Paketmanager (z. B. apt, yum, Homebrew). Installiere Git auf Deinem Betriebssystem:
@@ -88,7 +88,7 @@ Konfigurieren von Standardeditoren und anderen Optionen:
 
 
 
-Aufgaben:
+**Aufgaben:**
   1. Installiere und konfiguriere git auf Deinem Rechner.
   2. Wo liegt die Konfigurationsdatei, wie sieht die aus? 
   3. Was kann man dort noch konfigurieren? → [Cheat Sheet Git-Config](https://git-scm.com/book/de/v2/Erste-Schritte-Git-Basis-Konfiguration)
@@ -103,25 +103,26 @@ Initialisierung eines Ordners als Git-Repository:
 Clonen eines vorhandenen Repositories von einem anderen Computer/Speicher:
 -   `git clone <repository-url>`: Lädt ein Remote-Repository herunter und erstellt eine lokale Kopie.
 
-Aufgaben: 
-1. Lege Dir als erstes ein Verzeichnis `workshop` für den Workshop an, in dem Du alles speicherst, was wir hier machen werden.
+**Aufgaben:** 
+1. Lege Dir als erstes ein Verzeichnis *workshop* für den Workshop an, in dem Du alles speicherst, was wir hier machen werden.
 2. Erstelle darin einen Ordner mit dem Namen *git-workshop-doku* und mache daraus ein Git-Repo. 
 3. Woran kannst Du jetzt erkennen, dass es ein Git-Repo ist?
 
 ### 2.4 GitHub
 GitHub ist eine Webplattform, auf der du Git-Repositories hosten kannst, und die Funktionen für Zusammenarbeit, Code-Überprüfung, Automatisierung und Projektmanagement bietet. Github ist nur ein Anbieter [unter vielen](https://www.heise.de/tipps-tricks/GitHub-Alternativen-Die-5-besten-Seiten-4349610.html).
 
-:pencil2: **Aufgaben:**
-1. Gehe zu [GitHub Sign Up](https://github.com/signup) und folge den Anweisungen, um einen neuen Account zu erstellen.
+**Aufgaben:**
+1. Gehe zu [GitHub Sign Up](https://github.com/signup) und folge den Anweisungen, um einen neuen Account zu erstellen. Nutze dafür dieselbe E-Mail-Adresse wie für die Konfiguration von Git.
 2. Mache Dich mit der Oberfläche von Github vertraut und lege Dir dort ein neues Repo an. 
+3. Installiere in VScode die Extension [Github Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
 Man kann Repos auf zwei Arten kopieren. Beides geht auf Github auch über einen Button:
 - `clone`: Beim Klonen wird eine exakte Kopie eines bestehenden Repositorys auf den lokalen Computer heruntergeladen. Diese Kopie ist direkt mit dem Original-Repository verbunden, und Änderungen können durch Pull- und Push-Befehle synchronisiert werden.
 - `fork`: Ein Fork ist eine Kopie eines Repositorys, die auf einem Server (wie GitHub) erstellt wird. Diese Kopie ist unabhängig vom Original-Repository, obwohl sie davon abstammt. Ein Fork wird oft verwendet, um an einem Projekt zu arbeiten, ohne das Original zu beeinflussen. Änderungen können später durch Pull Requests ins ursprüngliche Repository eingereicht werden.
 
-Aufgaben:
-1. Clone das eben von Dir erstellte Repo auf Deinen Computer.
-2. Forke das Workshop-Repo: https://github.com/sandrawiegard/git-workshop in Deinen Github-Account
+**Aufgaben:**
+1. Forke das Workshop-Repo [github.com/sandrawiegard/git-workshop](https://github.com/sandrawiegard/git-workshop) in Deinen Github-Account
+2. Clone das Workshop-Repo auf Deinen Computer
    
 
 
@@ -130,7 +131,7 @@ Aufgaben:
 
 
 ### 3.1 Lokale Änderungen
-Commits in Git sind zunächst lokal, was bedeutet, dass alle Änderungen und Momentaufnahmen in einem persönlichen Repository auf dem eigenen Computer gespeichert werden. Jeder Commit erhält einen Commit-Hash, der ihn eindeutig identifiziert. Entwickler können so beliebig viele Commits erstellen, um ihre Fortschritte festzuhalten, zu experimentieren oder Fehler zu beheben, ohne das zentrale Repository zu beeinflussen.
+Commits speichern einen Schnappschuss Deines Repos zunächst lokal. Jeder Commit erhält einen Commit-Hash, der ihn eindeutig identifiziert. Entwickler können so beliebig viele Commits erstellen, um ihre Fortschritte festzuhalten, zu experimentieren oder Fehler zu beheben, ohne das zentrale Repository zu beeinflussen. Es werden aber nicht automatisch alle Dateien gespeichert, sondern nur die, die Du dafür ausgewählt hast.
 
 Hinzufügen von Dateien zum nächsten Commit:
  -   `git add <file>`: Fügt eine bestimmte Datei zum Staging-Bereich hinzu.
@@ -155,10 +156,10 @@ Committen von Änderungen:
 > -   Vermeide das Hinzufügen von nicht verwandten Änderungen in einem einzigen Commit.
 
 
-Aufgaben:
-1. Leg in Deinem Repo `git-workshop-doku` eine Datei namens `documentation.md` an und lasse Dir den Status anzeigen. 
+**Aufgaben:**
+1. Leg in Deinem Repo *git-workshop-doku* eine Datei namens *documentation.md* an und lasse Dir den Status anzeigen. 
 2. Füge die Datei zum Staging-Bereich hinzu und lasse Dir wieder den Status anzeigen. Siehst Du den Unterschied zu eben?
-3. Schreibe eine Commit-Message wie `add file for documentation` und commit.
+3. Schreibe eine Commit-Message wie *add file for documentation* und commit.
 4. Schau Dir die Liste der Commits an, was siehst Du da?
 
 
@@ -187,14 +188,14 @@ Pullen von Änderungen aus einem Remote-Repository:
 
 
 
-Aufgabe: 
+**Aufgabe:** 
 1. Finde heraus, was der Unterschied zwischen `fetch`und `pull`ist.
-2. Hat irgendwas nicht sofort geklappt? Schreib in `documentation.md`, was das war, und wie Du es gelöst hast. 
+2. Hat irgendwas nicht sofort geklappt? Schreib in *documentation.md*, was das war, und wie Du es gelöst hast. 
 3. Lass Dir nach dem commit noch einmal alle auflisten und pushe sie dann.
 
 
 ### 3.3 Branching
-Ein Branch ist ein paralleler Entwicklungszweig innerhalb eines Repositories, der es ermöglicht, unabhängig vom Hauptentwicklungsstrang zu arbeiten. Der Hauptbranch heißt `main`.
+Ein Branch ist ein paralleler Entwicklungszweig innerhalb eines Repositories, der es ermöglicht, unabhängig vom Hauptentwicklungsstrang zu arbeiten. Der Hauptbranch heißt *main*.
 
 Erstellen und Wechseln zwischen Branches:
 -   `git branch <branch-name>`: Erstellt einen neuen Branch.
@@ -209,9 +210,9 @@ Erstellen und Wechseln zwischen Branches:
 > -   Verwende aussagekräftige Namen, die den Zweck des Branches beschreiben.
 > -   Gängige Konventionen umfassen Feature-Branches (z. B. `feature/new-login-page`) oder Bugfix-Branches (z. B. `bugfix/fix-404-error`).
 
-Aufgaben:
-1. Erstelle einen Branch mit dem Namen `testbranch`.
-2. Wechsle in den Testbranch und ändere etwas an der `documentation.md`. Commit und push.
+**Aufgaben:**
+1. Erstelle einen Branch mit dem Namen *testbranch*.
+2. Wechsle in den Testbranch und ändere etwas an der *documentation.md*. Commit und push.
 
 
 ### 3.4 Merging
@@ -232,10 +233,10 @@ Zusammenführen von Branches:
 > -   Bei Konflikten müssen die Dateien manuell bearbeitet werden, um die Konflikte aufzulösen.
 > -   Anschließend wird der Commit abgeschlossen, um den Merge abzuschließen.
 
-Aufgaben: 
-1. Dann wechsle nach `main`und merge `testbranch`in den `main`.
-2. Schau Dir jetzt die History von `main`an.
-3. Hat irgendwas nicht sofort geklappt? Schreib in `documentation.md`, was das war, und wie Du es gelöst hast. Dann commit und push.
+**Aufgaben:** 
+1. Dann wechsle nach *main* und merge *testbranch*in den *main*.
+2. Schau Dir jetzt die History von *main*an.
+3. Hat irgendwas nicht sofort geklappt? Schreib in *documentation.md*, was das war, und wie Du es gelöst hast. Dann commit und push.
 
 
 ## Teil 4: Best Practices und Tipps
@@ -255,8 +256,8 @@ Das `.md` steht für Markdown, eine Auszeichnungssprache, die als HTML angezeigt
 
 Auf Github, also im *Github-flavoured* Markdown können auch [Emojis verwendet](https://gist.github.com/rxaviers/7360908) werden. :scream:
 
-Aufgaben:
-1. Erstelle eine sinnvolle README.md für Dein Repo `git-workshop-doku` mit Überschriften, einem Link zum Repo `git-workshop` und einem Text, der Dich auch in einem Jahr noch daran erinnert, was in diesem Repo zu finden ist.
+**Aufgaben:**
+1. Erstelle eine sinnvolle README.md für Dein Repo *git-workshop-doku* mit Überschriften, einem Link zum Repo *git-workshop* und einem Text, der Dich auch in einem Jahr noch daran erinnert, was in diesem Repo zu finden ist.
 2. Commit und push die README in Dein remote Repo auf Github.
 
 
@@ -266,7 +267,7 @@ Eine `.gitignore`-Datei ist eine einfache Datei in einem Git-Repository, die fes
 → [Cheat Sheet .gitignore](https://github.com/kenmueller/gitignore)
 
 
-Aufgaben:
+**Aufgaben:**
 Erstelle eine Datei mit dem Namen `.gitignore` im Root Deines Repos und schließe dort beispielhaft aus:
 - Dateien mit der Endung `txt`
 - Systemdateien wie `.env` und `.venv`
@@ -277,13 +278,13 @@ Erstelle eine Datei mit dem Namen `.gitignore` im Root Deines Repos und schließ
 ## Teil 5: Abschluss und Ausblick
 
 ### 5.1 Zusammenfassung
-Aufgaben:
+**Aufgaben:**
 1. Lege in Deinem Repo eine Datei `recap.md`an und schreibe die fünf Vorteile von Git auf. Benutze eine Liste in Markdown dafür.
 2. Committe mit einer aussagekräftigen Message und pushe in Dein Github-Repo.
 
 
 ### 5.2 Hausaufgabe
-Aufgaben:
+**Aufgaben:**
 1. Suche im Internet nach GUIs für Git.
 2. Welches GUI für Git gefällt Dir und warum?
 3. Schreib es mit Link und Screenshot in die `recap.md`, commit und push.
