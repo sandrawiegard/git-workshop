@@ -33,7 +33,7 @@ rebase vs merge
 ## Teil 2: Recap Git
 
 ### 2.1 Git Video
-:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) 
+:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) [video am besten vorm Mittagessen abspielen für Maximale aufmerksamkeit]
 
 ### 2.2 Git GUI
 Hausaufgaben vergleichen:
@@ -56,7 +56,7 @@ Der Prompt kann verschiedene Informationen anzeigen, die für den aktuellen Kont
 
 [Starship CMD](https://github.com/starship/starship/blob/master/docs/de-DE/guide/README.md) installieren.
 
-
+[Um Schriftarten einzupflegen braucht man Windows Terminal, mit PowerShell selbst geht das nicht. (Windows Terminal fasst die PowerShell und andere Kommandozeilen in eine zusammen.)]
 
 ### 3.2 Git Übungen auf der Shell
 https://lerneprogrammieren.de/git/
