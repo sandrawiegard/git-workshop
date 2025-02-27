@@ -56,7 +56,9 @@ Der Prompt kann verschiedene Informationen anzeigen, die für den aktuellen Kont
 
 [Starship CMD](https://github.com/starship/starship/blob/master/docs/de-DE/guide/README.md) installieren.
 
-[Um Schriftarten einzupflegen braucht man Windows Terminal, mit PowerShell selbst geht das nicht. (Windows Terminal fasst die PowerShell und andere Kommandozeilen in eine zusammen.)]
+[Um Schriftarten einzupflegen braucht man Windows Terminal, mit PowerShell selbst geht das nicht. (Windows Terminal fasst die PowerShell und andere Kommandozeilen in eine zusammen.)
+Windows Terminal ist eine Anwendung von Microsoft, von der PowerShell, CMD und alle anderen Eingabeaufforderungen unter Windows überschrieben werden. 
+Hier kann man unter anderem direkt die Schriftart ändern und hat die Möglichkeit die Farben anzupassen und ein Hintergrundbild einzufügen.]
 
 ### 3.2 Git Übungen auf der Shell
 https://lerneprogrammieren.de/git/
