@@ -67,11 +67,11 @@ Github Actions werden in yaml geschrieben. YAML steht für *Yet Another Markup L
 
 Denkt daran, sinnvolle Commitmessages zu verwenden:
 1. Baue diese [Automatisierung](https://dev.to/sre_panchanan/hello-world-in-github-actions-a-beginners-guide-to-your-first-workflow-1mbh) nach 
-2. Überprüfe die Fehler in den Logs und löse sie auf bis die Action grün durchläuft.
-3. dann [diese](https://graphite.dev/guides/github-actions-beginner-guide) 
+2. Überprüfe die Fehler in den Logs und löse sie auf bis die Action grün durchläuft. [Meine Action war von Anfang an Grün?]
+3. dann [diese](https://graphite.dev/guides/github-actions-beginner-guide) [Alte main.yml Überschreiben? Detaillierte Aufgabenstellung]
 4. Erweitere die Ausgabe: Wenn auf einen anderen Branch gepusht wird, soll etwas anderes im Log stehen, als wenn auf Main gepusht wird. Lege diesen anderen Branch auch an und probiere, ob es funktioniert.
 5. Wenn Du Zugriff auf einen Teams-Channel hast, kannst Du dort auch eine [Nachricht hineinschreiben](https://www.indiumsoftware.com/blog/github-event-request-notification-to-teams-channel/). Wenn das nicht klappt, versucht es mit Discord oder Telegram.
-6. Macht was [zeitgesteuert](https://crontab.guru/)
+6. Macht was [zeitgesteuert](https://crontab.guru/) [Bitte Aufgabenstellung detaillierter stellen]
 7. Findet raus, was man mit Actions noch machen kann und erzählt uns davon.
 
 
