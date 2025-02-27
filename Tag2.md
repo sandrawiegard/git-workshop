@@ -33,7 +33,7 @@ rebase vs merge
 ## Teil 2: Recap Git
 
 ### 2.1 Git Video
-:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) 
+:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) [video am besten vorm Mittagessen abspielen für Maximale aufmerksamkeit]
 
 ### 2.2 Git GUI
 Hausaufgaben vergleichen:
