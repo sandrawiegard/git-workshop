@@ -266,6 +266,7 @@ Eine `.gitignore`-Datei ist eine einfache Datei in einem Git-Repository, die fes
 
 → [Cheat Sheet .gitignore](https://github.com/kenmueller/gitignore)
 
+[hier wäre es gut wenn eine schriftliche erkärung zu Tokens oder ein Link hinzugefügt wird]
 
 **Aufgaben:**
 Erstelle eine Datei mit dem Namen `.gitignore` im Root Deines Repos und schließe dort beispielhaft aus:
