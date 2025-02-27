@@ -57,6 +57,8 @@ Mit GitHub Actions kannst du deine Softwareentwicklungs-Workflows direkt im  Rep
 
 Github Actions werden in yaml geschrieben. YAML steht für *Yet Another Markup Language*. Es ist eine  für Menschen lesbare Auszeichnungssprache, die häufig für  Konfigurationsdateien verwendet wird, insbesondere von CI- und  [DevOps](https://de.wikipedia.org/wiki/DevOps)-fokussierten Softwaretools. YAML ist eine Erweiterung von JSON um syntaktisch  wichtige Zeilenumbrüche und Einrückungen, ähnlich wie auch in Python  geschrieben wird. ***Anders als in Python allerdings erlaubt YAML  keine Tabulator-Zeichen, das ist eine häufige Fehlerquelle!***
 
+[Hier längere Erklärung zur Syntax von .yaml]
+
 → [Cheat Sheet YAML](https://quickref.me/yaml.html) 
 → [Cheat Sheet Github Actions](https://resources.github.com/actions/github-actions-cheat/)
 
