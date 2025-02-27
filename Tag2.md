@@ -56,7 +56,7 @@ Der Prompt kann verschiedene Informationen anzeigen, die für den aktuellen Kont
 
 [Starship CMD](https://github.com/starship/starship/blob/master/docs/de-DE/guide/README.md) installieren.
 
-
+[Um Schriftarten einzupflegen braucht man Windows Terminal, mit PowerShell selbst geht das nicht. (Windows Terminal fasst die PowerShell und andere Kommandozeilen in eine zusammen.)]
 
 ### 3.2 Git Übungen auf der Shell
 https://lerneprogrammieren.de/git/
