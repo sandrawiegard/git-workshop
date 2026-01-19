@@ -58,7 +58,7 @@ Git ist ein Versionsmanagementsystem, entwickelt von Linus Torvalds 2005 für di
 Git ist erstmal nur ein Softwarepaket. Du kannst es benutzen über:
 - die Command Line
 - die Integration in Deine IDE
-- oder einrm_ extra GUI 
+- oder eine extra GUI 
 
 ### 2.1 Installation von Git
 Lade Git von der [offiziellen Website](https://git-scm.com/) oder verwende einen Paketmanager (z. B. apt, yum, Homebrew). Installiere Git auf Deinem Betriebssystem:
@@ -242,9 +242,9 @@ Zusammenführen von Branches:
 ## Teil 4: Best Practices und Tipps
 
 ### 4.1 Ordnung und Struktur
-Namenskonventionen
+**Namenskonventionen für Branches**
 
-[Unser Gitlab mit seinen hunderten Repos zeigen und über Namen sowie Konventionen sprechen.]
+Gängige Konventionen umfassen Feature-Branches (z. B. `feature/new-login-page`) oder Bugfix-Branches (z. B. `bugfix/fix-404-error`)
 
 [Convention over Configuration](https://de.wikipedia.org/wiki/Konvention_vor_Konfiguration) ist ein Softwareentwicklungsprinzip, das darauf abzielt, die Komplexität von Systemen zu reduzieren, indem vorgegebene Konventionen genutzt werden, um gängige Aufgaben ohne umfangreiche Konfigurationen zu lösen. 
 
