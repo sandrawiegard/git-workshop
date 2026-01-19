@@ -2,10 +2,11 @@
 
 
 von Thomas und Sandra
+mit Suleayman, Richard, Simon und Moritz
 
 ## Ablauf
 
-vom 25. bis 27. Februar 2025
+vom 20. bis 22. Januar 2025
 
 Der Workshop beginnt um 9 und endet gegen 16 Uhr. Alle 90 Minuten machen wir eine kurze Pause und mittags eine lange. 
 
