@@ -116,8 +116,10 @@ GitHub ist eine Webplattform, auf der du Git-Repositories hosten kannst, und die
 
 **Aufgaben:**
 1. Gehe zu [GitHub Sign Up](https://github.com/signup) und folge den Anweisungen, um einen neuen Account zu erstellen. Nutze dafür dieselbe E-Mail-Adresse wie für die Konfiguration von Git.
-2. Mache Dich mit der Oberfläche von Github vertraut und lege Dir dort ein neues Repo an. 
-3. Installiere in VScode die Extension [Github Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
+2. Aktiviere 2FA -> https://github.com/settings/security
+3. Hinterlege deinen Public SSH Key -> https://github.com/settings/keys
+4. Mache Dich mit der Oberfläche von Github vertraut und lege Dir dort ein neues Repo an. 
+5. Installiere in VScode die Extension [Github Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
 Man kann Repos auf zwei Arten kopieren. Beides geht auf Github auch über einen Button:
 - `clone`: Beim Klonen wird eine exakte Kopie eines bestehenden Repositorys auf den lokalen Computer heruntergeladen. Diese Kopie ist direkt mit dem Original-Repository verbunden, und Änderungen können durch Pull- und Push-Befehle synchronisiert werden.
