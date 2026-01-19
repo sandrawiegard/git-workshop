@@ -1,8 +1,9 @@
 # Git-Workshop für Azubis
 
+https://github.com/sandrawiegard/git-workshop/ 
 
 von Thomas und Sandra
-mit Suleayman, Richard, Simon und Moritz
+mit Suleyman, Richard, Simon und Moritz
 
 ## Ablauf
 
