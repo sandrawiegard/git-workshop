@@ -19,6 +19,7 @@
   - [4.1 Ordnung und Struktur](#41-ordnung-und-struktur)
   - [4.2 README.md](#42-readmemd)
   - [4.3 .gitignore](#43-gitignore)
+  - [4.3 Token](#44-token)
 - [Teil 5: Abschluss und Ausblick](#teil-5-abschluss-und-ausblick)
   - [5.1 Zusammenfassung](#51-zusammenfassung)
   - [5.2 Hausaufgabe](#52-hausaufgabe)
