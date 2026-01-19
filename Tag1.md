@@ -103,7 +103,7 @@ Initialisierung eines Ordners als Git-Repository:
   
 Clonen eines vorhandenen Repositories von einem anderen Computer/Speicher:
 -   `git clone <repository-url>`: Lädt ein Remote-Repository herunter und erstellt eine lokale Kopie.
--   `git clone https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY]`: Auth. mit Token wenn das Repo nicht öffentlich ist
+-   `git clone https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY]`: Auth. mit Token wenn das Repo nicht öffentlich ist
 
 
 **Aufgaben:** 
@@ -275,9 +275,8 @@ Eine `.gitignore`-Datei ist eine einfache Datei in einem Git-Repository, die fes
 Um sich an nicht-öffentlichen Repos zu authentifizieren, sollte ein Token verwendet werden.
 Anders als ein User/PW erlangt jemand bei einem Leak des Token keine Kontrolle über den Git Account.
 Ein Token in z.B. Github erstellt man über Einstellungen->Developer Settings->Personal Access Token. Dort wählt man aus, welche Rechte bei einem Zugriff vorliegen.
-Beispiel des Klonens: 'git clone https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY]'
+Beispiel des Klonens: `git clone https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY]`
 Die URL https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY] kann auch über Git Plugins/Addons in den IDEs bei der Angabe der Remote URL angegeben werden
-
 
 **Aufgaben:**
 Erstelle eine Datei mit dem Namen `.gitignore` im Root Deines Repos und schließe dort beispielhaft aus:
