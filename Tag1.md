@@ -102,8 +102,8 @@ Initialisierung eines Ordners als Git-Repository:
 -   `git init`: Macht ein Git-Repository aus dem aktuellen Verzeichnis.
   
 Clonen eines vorhandenen Repositories von einem anderen Computer/Speicher:
--   'git clone <repository-url>`: Lädt ein Remote-Repository herunter und erstellt eine lokale Kopie.
--   'git clone https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY]': Auth. mit Token wenn das Repo nicht öffentlich ist
+-   `git clone <repository-url>`: Lädt ein Remote-Repository herunter und erstellt eine lokale Kopie.
+-   `git clone https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY]`: Auth. mit Token wenn das Repo nicht öffentlich ist
 
 
 **Aufgaben:** 
