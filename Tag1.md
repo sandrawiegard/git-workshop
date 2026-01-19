@@ -102,7 +102,7 @@ Initialisierung eines Ordners als Git-Repository:
   
 Clonen eines vorhandenen Repositories von einem anderen Computer/Speicher:
 -   'git clone <repository-url>`: Lädt ein Remote-Repository herunter und erstellt eine lokale Kopie.
--   'git clone https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY]': Auth. mit Token
+-   'git clone https://[TOKEN]:github.com/[USER/Projekt]/[REPOSITORY]': Auth. mit Token wenn das Repo nicht öffentlich ist
 
 
 **Aufgaben:** 
