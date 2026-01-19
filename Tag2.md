@@ -17,12 +17,10 @@
 
 
 ## Teil 1: Weitere Git-Funktionen
-
-
-### 1.1 Pull Requests 
 [Max]
 
-dann das SecOps-Board und das Backlog zeigen
+### 1.1 Pull Requests 
+
 
 ### 1.2 Squashen
 Wenn Ihr Euch die Commit-History mit `git log` 
@@ -30,10 +28,11 @@ Wenn Ihr Euch die Commit-History mit `git log`
 ### 1.3 Rebasen
 rebase vs merge
 
+
 ## Teil 2: Recap Git
 
 ### 2.1 Git Video
-:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) [video am besten vorm Mittagessen abspielen für Maximale aufmerksamkeit]
+:arrow_forward: Video [Git happens](https://www.youtube.com/watch?v=yCh6TSLIQBQ) (37 Minuten) 
 
 ### 2.2 Git GUI
 Hausaufgaben vergleichen:
