@@ -271,12 +271,6 @@ Eine `.gitignore`-Datei ist eine einfache Datei in einem Git-Repository, die fes
 
 → [Cheat Sheet .gitignore](https://github.com/kenmueller/gitignore)
 
-### 4.4 Token
-Um sich an nicht-öffentlichen Repos zu authentifizieren, sollte ein Token verwendet werden.
-Anders als ein User/PW erlangt jemand bei einem Leak des Token keine Kontrolle über den Git Account.
-Ein Token in z.B. Github erstellt man über Einstellungen->Developer Settings->Personal Access Token. Dort wählt man aus, welche Rechte bei einem Zugriff vorliegen.
-Beispiel des Klonens: `git clone https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY]`
-Die URL https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY] kann auch über Git Plugins/Addons in den IDEs bei der Angabe der Remote URL angegeben werden
 
 **Aufgaben:**
 Erstelle eine Datei mit dem Namen `.gitignore` im Root Deines Repos und schließe dort beispielhaft aus:
@@ -284,6 +278,16 @@ Erstelle eine Datei mit dem Namen `.gitignore` im Root Deines Repos und schließ
 - Systemdateien wie `.env` und `.venv`
 - den Inhalt eines Ordners mit dem Namen `logs`
 - dann check die Datei ein
+
+
+
+### 4.4 Token
+Um sich an nicht-öffentlichen Repos zu authentifizieren, sollte ein Token verwendet werden.
+Anders als ein User/PW erlangt jemand bei einem Leak des Token keine Kontrolle über den Git Account.
+Ein Token in z.B. Github erstellt man über Einstellungen->Developer Settings->Personal Access Token. Dort wählt man aus, welche Rechte bei einem Zugriff vorliegen.
+Beispiel des Klonens: `git clone https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY]`
+Die URL https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY] kann auch über Git Plugins/Addons in den IDEs bei der Angabe der Remote URL angegeben werden
+
 
 
 ## Teil 5: Abschluss und Ausblick
