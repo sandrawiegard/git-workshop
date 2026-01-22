@@ -1,0 +1,16 @@
+.github/workflows/main.yml
+
+name: CI Demo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello
+        run: echo "Hello, WELT!"

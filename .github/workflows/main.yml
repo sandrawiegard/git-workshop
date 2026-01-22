@@ -1,0 +1,22 @@
+name: CI Demo
+
+on:
+  push:
+    branches:
+      - main
+      - branch-suleyman
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Branch specific output
+        run: |
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            echo "Hallo Welt (MAIN)"
+            echo "Wie geht es dir?"
+          else
+            echo "Hallo Welt (BRANCH: $GITHUB_REF_NAME)"
+            echo "Das ist nicht main - Test-Branch läuft ✅"
+          fi
