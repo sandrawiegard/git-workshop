@@ -289,6 +289,44 @@ Beispiel des Klonens: `git clone https://[TOKEN]@github.com/[USER/Projekt]/[REPO
 Die URL https://[TOKEN]@github.com/[USER/Projekt]/[REPOSITORY] kann auch über Git Plugins/Addons in den IDEs bei der Angabe der Remote URL angegeben werden
 
 
+### 4.5 Windows: WSL + Ubuntu + Git + Oh My Zsh
+## Windows: WSL + Ubuntu + Git + Oh My Zsh
+
+| Schritt | Aktion | Befehl |
+|---|---|---|
+| **1. WSL installieren** | PowerShell **als Administrator** öffnen | `wsl --install` |
+| **2. Neustart** | Windows neu starten | – |
+| **3. Ubuntu starten** | Startmenü → **Ubuntu** oder Windows Terminal → **Ubuntu** | – |
+| **4. Linux-Benutzer anlegen** | Benutzername und Passwort vergeben | – |
+| **5. WSL prüfen** | In PowerShell ausführen | `wsl -l -v` |
+| | Erwartet: Ubuntu mit **VERSION 2** | – |
+| **6. Ubuntu aktualisieren** | In Ubuntu | `sudo apt update && sudo apt upgrade -y` |
+| **7. Git, Curl und Zsh installieren** | In Ubuntu | `sudo apt install -y git curl zsh` |
+| **8. Git prüfen** | | `git --version` |
+| **9. Zsh prüfen** | | `zsh --version` |
+| **10. Oh My Zsh installieren** | In Ubuntu | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **11. Zsh als Standard verwenden** | Bei der Frage des Installers **Yes** wählen | – |
+| **12. Git-Plugin aktivieren** | Konfiguration öffnen | `nano ~/.zshrc` |
+| **13. Plugin setzen** | Folgende Zeile eintragen | `plugins=(git)` |
+| **14. Konfiguration laden** | | `source ~/.zshrc` |
+| **15. Git konfigurieren** | Namen setzen | `git config --global user.name "Dein Name"` |
+| | E-Mail setzen | `git config --global user.email "deine@email.de"` |
+| **16. Testen** | Git-Status-Alias | `gst` |
+| | Git-Branch anzeigen | `git branch` |
+
+## Oh My Zsh – Git-Aliase
+
+| Alias | Entspricht | Bedeutung |
+|---|---|---|
+| `gst` | `git status` | Status anzeigen |
+| `gaa` | `git add --all` | Alle Änderungen zum Commit vormerken |
+| `gc` | `git commit` | Commit erstellen |
+| `gp` | `git push` | Änderungen zu GitHub pushen |
+| `gl` | `git pull` | Änderungen von GitHub holen |
+| `gco` | `git checkout` | Branch wechseln |
+| `gb` | `git branch` | Branches anzeigen |
+| `gd` | `git diff` | Änderungen anzeigen |
+
 
 ## Teil 5: Abschluss und Ausblick
 
