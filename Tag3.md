@@ -66,14 +66,62 @@ Github Actions werden in yaml geschrieben. YAML steht für *Yet Another Markup L
 **Aufgaben:**
 
 Denkt daran, sinnvolle Commitmessages zu verwenden:
-1. Baue diese [Automatisierung](https://dev.to/sre_panchanan/hello-world-in-github-actions-a-beginners-guide-to-your-first-workflow-1mbh) nach 
-2. Überprüfe die Fehler in den Logs und löse sie auf bis die Action grün durchläuft. [Meine Action war von Anfang an Grün?]
-3. dann [diese](https://graphite.dev/guides/github-actions-beginner-guide) [Alte main.yml Überschreiben? Detaillierte Aufgabenstellung]
-4. Erweitere die Ausgabe: Wenn auf einen anderen Branch gepusht wird, soll etwas anderes im Log stehen, als wenn auf Main gepusht wird. Lege diesen anderen Branch auch an und probiere, ob es funktioniert.
-5. Wenn Du Zugriff auf einen Teams-Channel hast, kannst Du dort auch eine [Nachricht hineinschreiben](https://www.indiumsoftware.com/blog/github-event-request-notification-to-teams-channel/). Wenn das nicht klappt, versucht es mit Discord oder Telegram.
-6. Macht was [zeitgesteuert](https://crontab.guru/) [Bitte Aufgabenstellung detaillierter stellen]
-7. Findet raus, was man mit Actions noch machen kann und erzählt uns davon.
+1. Öffne https://webhook.site und kopiere dir die Unique URL des Webhooks
+2. Lege ein Github Repository Secret unter /settings/secrets/actions mit dem Namen "WEBHOOK_URL" und der URL des Webhooks an
+3. Erstelle eine Github Action mit folgendem Inhalt:
 
+   ```yaml
+   name: CI/CD Webhook Demo
+
+   on:
+     push:
+       branches:
+         - main
+
+     workflow_dispatch:
+
+   permissions: {}
+
+   jobs:
+     trigger-webhook:
+       name: Trigger Webhook
+       runs-on: ubuntu-slim
+
+       timeout-minutes: 2
+
+       env:
+         WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+
+       steps:
+         - name: Send deployment webhook
+           shell: bash
+           run: |
+             PAYLOAD=$(printf \
+               '{"event":"main-push","repository":"cicd_demo","commit":"aaa","actor":"User"}' \
+             )
+
+             echo "Sending webhook:"
+             echo "$PAYLOAD"
+
+             curl \
+               --fail-with-body \
+               --silent \
+               --show-error \
+               --request POST \
+               --header "Content-Type: application/json" \
+               --data "$PAYLOAD" \
+               "$WEBHOOK_URL"
+
+             echo
+             echo "Webhook successfully sent."
+   ```
+
+4. Pushe eine Änderung in den Main und beobachte dabei den Verlauf der Github Action unter /actions und den Status deines Webhooks bei webhook.site. Dort sollte ein Post Event nach einem Push in den Main zu sehen sein
+5. Ändere die Playload in der Action und beobachte, ob diese korrekt unter "Raw Content" bei webhook.site angezeigt wird 
+6. Erweitere die Ausgabe: Wenn auf einen anderen Branch gepusht wird, soll etwas anderes im Log stehen, als wenn auf Main gepusht wird. Lege diesen anderen Branch auch an und probiere, ob es funktioniert.
+7. Wenn Du Zugriff auf einen Teams-Channel hast, kannst Du dort auch eine [Nachricht hineinschreiben](https://www.indiumsoftware.com/blog/github-event-request-notification-to-teams-channel/). Wenn das nicht klappt, versucht es mit Discord oder Telegram.
+8. Macht was [zeitgesteuert](https://crontab.guru/) [Bitte Aufgabenstellung detaillierter stellen]
+9. Findet raus, was man mit Actions noch machen kann und erzählt uns davon.
 
 ### 1.3 Automatisierung der Automatisierung mit Dependabot
 Die Warnungen in den Logs sagen, dass einige der Packages, die Ihr in den Actions benutzt habt, nicht mehr aktuell sind. Man kann das von Hand auflösen und für `/actions/checkout`im Repo [github.com/actions/checkout](https://github.com/actions/checkout) in der rechten Spalte die Versionshistory überprüfen und eine Version auswählen. Oder man lässt es machen:
